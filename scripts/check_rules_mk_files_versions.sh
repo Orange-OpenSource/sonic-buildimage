@@ -3,7 +3,7 @@
 cd $(dirname $0)
 cd ..
 rootdir=$(pwd)
-for pkgsrcname in isc-dhcp debootstrap bash kdump-tools lm-sensors snmpd iptables hiredis; do
+for pkgsrcname in isc-dhcp debootstrap bash kdump-tools lm-sensors snmpd iptables hiredis ifupdown2; do
     basevarname=$(echo $pkgsrcname"_VERSION" | tr [a-z\-] [A-Z_])
 
     cd $rootdir/src/$pkgsrcname/
